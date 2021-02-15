@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 		else
 		{
 			rd = request.getRequestDispatcher("/login.html");
-			out.println("<h1>Login Error!!!</h1>");
+			out.println("<h1 style='color:red'>Login Error!!!</h1>");
 			rd.include(request, response);
 		}
 		
