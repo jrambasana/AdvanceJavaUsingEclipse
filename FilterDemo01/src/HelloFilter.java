@@ -14,9 +14,11 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter("/hello")
 public class HelloFilter implements Filter {
 	public void destroy() {
+		System.out.println("Filter destroyed.");
 	}
 
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, 
+			FilterChain chain) throws IOException, ServletException {
 		PrintWriter out = response.getWriter();
 		out.println("Filter invoked before.");
 		chain.doFilter(request, response);
@@ -24,6 +26,7 @@ public class HelloFilter implements Filter {
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
+		System.out.println("Filter initialized.");
 	}
 
 }
