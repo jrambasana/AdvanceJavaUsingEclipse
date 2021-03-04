@@ -8,8 +8,10 @@ import javax.servlet.http.*;
 
 @WebServlet("/viewregs")
 public class ViewRegistrations extends HttpServlet {
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		Connection con = null;
