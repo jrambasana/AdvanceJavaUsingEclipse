@@ -38,8 +38,7 @@ public class SignUpServlet extends HttpServlet {
 		{
 		 Class.forName("com.mysql.jdbc.Driver");
 		 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ajpprogram3db", "root", "");
-		 pst = con.prepareStatement("insert into registrations (enrollment, fname, lname, semester, phone)"
-				 						+" values (?,?,?,?,?)");
+		 pst = con.prepareStatement("insert into registrations (enrollment, fname, lname, semester, phone) values (?,?,?,?,?)");
 		 pst.setString(1,enrollment);
 		 pst.setString(2, fname);
 		 pst.setString(3, lname);

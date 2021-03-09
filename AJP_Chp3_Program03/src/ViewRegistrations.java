@@ -56,7 +56,7 @@ public class ViewRegistrations extends HttpServlet {
 		 }
 		 else
 		 {
-			 out.println("Table empty");
+			 out.println("No users found!!");
 		 }
 
 		}

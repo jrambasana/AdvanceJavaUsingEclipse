@@ -72,7 +72,7 @@ public class EditServlet extends HttpServlet {
 			 		+ "'/> </td>");
 			 out.println("</tr>");
 			 out.println("<tr>");
-			 out.println("<td></td> <td> <input type='submit' value='Update'/> </td>");
+			 out.println("<td></td> <td> <input type='submit' value='Update Record'/> </td>");
 			 out.println("</tr>");
 			 out.println("</table>");
 			 out.println("</form>");

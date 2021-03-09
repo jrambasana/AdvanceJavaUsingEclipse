@@ -29,7 +29,8 @@ public class LoginServlet extends HttpServlet {
 		RequestDispatcher rd = null;
 		ServletConfig config = getServletConfig();
 		
-		if( name.equals(config.getInitParameter("username")) && pwd.equals(config.getInitParameter("password")) )
+		if( name.equals(config.getInitParameter("username")) && 
+				pwd.equals(config.getInitParameter("password")) )
 		{
 			rd = request.getRequestDispatcher("/homepage");
 			rd.forward(request, response);
