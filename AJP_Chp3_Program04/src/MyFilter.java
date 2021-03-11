@@ -1,15 +1,14 @@
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 import javax.servlet.*;
 
-public class MyFilter implements Filter{
-
+public class MyFilter implements Filter
+{
 	public void init(FilterConfig arg0) throws ServletException {}
 	
 	public void doFilter(ServletRequest req, ServletResponse resp,
-			FilterChain chain) throws IOException, ServletException {
-		
+		FilterChain chain) throws IOException, ServletException 
+	{
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
 		
@@ -27,7 +26,4 @@ public class MyFilter implements Filter{
 		
 	}
 	public void destroy() {}
-
-	
-
 }

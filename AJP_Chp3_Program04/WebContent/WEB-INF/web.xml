@@ -4,17 +4,14 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
     <servlet>
 	    <servlet-name>AdminServlet</servlet-name>
 	    <servlet-class>AdminServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
 	    <servlet-name>AdminServlet</servlet-name>
 	    <url-pattern>/servlet1</url-pattern>
   </servlet-mapping>
-  
  <filter>
 		  <filter-name>f1</filter-name>
 		  <filter-class>MyFilter</filter-class>
@@ -23,8 +20,6 @@
 		  <filter-name>f1</filter-name>
 		  <url-pattern>/servlet1</url-pattern>
   </filter-mapping>
-  
-  
 </web-app>
 
 
