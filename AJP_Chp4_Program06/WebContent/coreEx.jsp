@@ -3,15 +3,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login using core tag</title>
+        <title>Core tag examples</title>
     </head>
     <body>
-<!--         <form action="core1.jsp" method="Post"> -->
-<!--             Name <input type="text" name="uname"><br> -->
-<!--             Password <input type="text" name="pass"> -->
-<!--             <input type="submit" value="Login"> -->
-<!--         </form> -->
-
+        <h1>Core tag examples</h1>
 <ul>
 	<li><a href="c1.jsp">c:out Tag Example</a></li>
 	<li><a href="c2.jsp">c:set Tag Example</a></li>
@@ -23,3 +18,16 @@
 </ul>
     </body>
 </html>
+
+
+
+
+
+
+
+
+<!--         <form action="core1.jsp" method="Post"> -->
+<!--             Name <input type="text" name="uname"><br> -->
+<!--             Password <input type="text" name="pass"> -->
+<!--             <input type="submit" value="Login"> -->
+<!--         </form> -->
