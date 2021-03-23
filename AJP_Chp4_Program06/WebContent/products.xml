@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+		<product>
+				<id>1</id>
+				<name>Shampoo</name>
+				<price>150</price>
+				<netWeight>200</netWeight>
+		</product>
+		<product>
+				<id>2</id>
+				<name>Soap</name>
+				<price>50</price>
+				<netWeight>100</netWeight>
+		</product>
+		<product>
+				<id>3</id>
+				<name>Comb</name>
+				<price>20</price>
+				<netWeight>15</netWeight>
+		</product>
+		<product>
+				<id>4</id>
+				<name>Detergent</name>
+				<price>250</price>
+				<netWeight>500</netWeight>
+		</product>
+</products>
