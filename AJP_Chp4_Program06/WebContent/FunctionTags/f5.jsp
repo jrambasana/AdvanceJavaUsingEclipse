@@ -11,10 +11,12 @@
 <body>
 
 <c:set var="str1" value="Welcome-to-JSTL-Programming."/>  
+<p>String-1 : ${str1}</p>  
+
 <c:set var="str2" value="${fn:split(str1, '-')}" />  
 <c:set var="str3" value="${fn:join(str2, ' ')}" />  
-  
 <p>String-3 : ${str3}</p>  
+
 <c:set var="str4" value="${fn:split(str3, ' ')}" />  
 <c:set var="str5" value="${fn:join(str4, '-')}" />   
 <p>String-5 : ${str5}</p>  

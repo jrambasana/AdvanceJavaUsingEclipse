@@ -9,6 +9,6 @@
 <p>Before Removing the variable the Value is: <c:out value="${income}"/></p>  
 
 <c:remove var="income"/>	
-<p>After Removing the variable the Value is: <c:out value="${income}"/></p>
+<p>After Removing the variable the Value is: 	</p>
 </body>
 </html>  

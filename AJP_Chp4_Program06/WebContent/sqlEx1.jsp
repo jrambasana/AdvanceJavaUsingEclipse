@@ -11,8 +11,8 @@
 <body>
 <h1>SQL Tag Example 1</h1>
 <sql:setDataSource var="con" driver="com.mysql.jdbc.Driver"  
-     url="jdbc:mysql://localhost/test"  
-     user="root"  password="1234"/>  
+     url="jdbc:mysql://localhost:3306/test"  
+     user="root"  password=""/>  
 Connection successful.     
 </body>
 </html>

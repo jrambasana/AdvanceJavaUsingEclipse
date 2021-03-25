@@ -24,7 +24,8 @@ ${fn:substringBefore(string, "Class")}
 
 <c:set var="author" value="Akshay Kumar"/>  
 <c:set var="string" value="abc pqr xyz abc"/>  
-${fn:replace(author, "Akshay", "Pankaj")}  
+${fn:replace(author, "Akshay", "Pankaj")}   
+<br/>
 ${fn:replace(string, "abc", "hello")}  
 
 </body>

@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<ul>
+	<li><a href="formatEx1.jsp">fmt:parseNumber Example</a></li>
+</ul>
 </body>
 </html>

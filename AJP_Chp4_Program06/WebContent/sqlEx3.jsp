@@ -9,21 +9,20 @@
 <title>SQL Tags examples</title>
 </head>
 <body>
-<h1>SQL Tag Example 1</h1>
+<h1>SQL Tag Example 3</h1>
 <sql:setDataSource var="con" driver="com.mysql.jdbc.Driver"  
      url="jdbc:mysql://localhost:3306/test1"  
      user="root"  password=""/>  
-
- 
+     
 <sql:transaction dataSource="${con}">  
    <sql:update var="count">  
-      UPDATE Students SET student_name = 'Sachin' WHERE id = 1  
+      UPDATE Students SET student_name = 'Amol' WHERE id = 6  
    </sql:update>  
    <sql:update var="count">  
-      UPDATE Students SET student_name= 'Yatin' WHERE id = 2  
+      UPDATE Students SET student_name= 'Jatin' WHERE id = 2  
    </sql:update>  
    <sql:update var="count">  
-     INSERT INTO Students VALUES (5,'Abhijit', 22, 'Surat');  
+     DELETE FROM Students WHERE id = 5;  
    </sql:update>  
 </sql:transaction>  
 
@@ -38,13 +37,13 @@ Select * from students;
 <th>Age</th>  
 <th>City </th>  
 </tr>  
-<c:forEach var="table" items="${rs.rows}">  
-<tr align="center">  
-<td ><c:out value="${table.id}"/></td>  
-<td><c:out value="${table.student_name}"/></td>  
-<td><c:out value="${table.age}"/></td>  
-<td><c:out value="${table.city}"/></td>  
-</tr>  
+<c:forEach var="row" items="${rs.rows}">  
+	<tr align="center">  
+		<td ><c:out value="${row.id}"/></td>  
+		<td><c:out value="${row.student_name}"/></td>  
+		<td><c:out value="${row.age}"/></td>  
+		<td><c:out value="${row.city}"/></td>  
+	</tr>  
 </c:forEach>  
 </table>  
 

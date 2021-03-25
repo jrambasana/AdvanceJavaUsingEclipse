@@ -9,8 +9,9 @@
 <title>Using JSTL Functions</title>  
 </head>
 <body>
-<c:set var="msg" value="The Example of JSTL fn:startsWith() Function"/>  
-The string starts with "The": ${fn:startsWith(msg, 'The')}  
+<c:set var="msg" value="The Example of JSTL fn:startsWith() Function"/> 
+STRING: <c:out value="${msg}"/>
+<br>The string starts with "The": ${fn:startsWith(msg, 'The')}  
 <br>The string starts with "Example": ${fn:startsWith(msg, 'Example')}  
 <br>The string ends with "Function": ${fn:endsWith(msg, 'Function')}  
 </body>
